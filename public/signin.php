@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'templates/header.php';
+
 ?>
 
 <form action="mainpage.php" method="get">
@@ -23,7 +23,7 @@ if (isset($_SESSION['nameInput'])) {
 
 <?php
 
-require_once 'templates/footer.php';
+
 
 /*
 echo  '<hr>';
