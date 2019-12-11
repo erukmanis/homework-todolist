@@ -57,4 +57,8 @@ require_once '../source/echotodolist.php';
 
 echo "<hr>";
 
+
+require_once '../source/addtasks.php';
+
+
 require_once 'templates/footer.php';

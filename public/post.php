@@ -13,14 +13,14 @@ require_once '../public/templates/header.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo "We got a POST request!";
     foreach ($_POST as $key => $value) {
-        echo "<div class='info-text'>We received name $key with value $value </div><hr>";
+        echo "<div>We received name $key with value $value </div><hr>";
     }
     if (isset($_POST['nameInput'])) {
         echo "Hello there " . $_POST['nameInput'] . "! <hr>";
-    } else {
-        echo "that was not a POST, maybe GET";
     }
     var_dump($_POST);
+} else {
+    echo "that was not a POST, maybe GET";
 }
 
 require_once '../public/templates/footer.php';
