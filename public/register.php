@@ -1,13 +1,14 @@
 <?php
 
-require_once '../public/templates/header.php'
+require_once '../public/templates/header.php';
 ?>
 
 <div class="register">
-    <form action="" method="post">
-        <input type="text" name="username" required>
+
+    <form action="processregister.php" method="post">
+        <input type="text" placeholder="User Name" name="username" required>
         <input type="password" name="password" id="" required>
-        <button type="submit">Submit</button>
+        <button type="submit">Register</button>
 
 
     </form>
@@ -16,4 +17,4 @@ require_once '../public/templates/header.php'
 
 <?php
 
-require_once '../public/templates/footer.php'
+require_once '../public/templates/footer.php';
