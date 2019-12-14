@@ -1,6 +1,6 @@
 <?php
 
-require_once '../public/templates/header.php';
+require_once './header.php';
 ?>
 
 <div class="register">
@@ -17,4 +17,4 @@ require_once '../public/templates/header.php';
 
 <?php
 
-require_once '../public/templates/footer.php';
+require_once './footer.php';

@@ -1,5 +1,6 @@
 <?php
-require_once '../source/db.php';
+
+require_once '../db.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];
