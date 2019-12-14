@@ -6,9 +6,16 @@ require_once 'db.php';
 if (!isset($_SESSION['username'])) {
     echo "You need to register for To do List";
     return;
+} else {
+    echo "Welcome to your private todolist " . $_SESSION['username'] . " !";
 }
 
-$stmt = $conn->prepare("SELECT * FROM schedule");
+
+$stmt = $conn->prepare("SELECT * FROM schedule
+WHERE (user = :user)");
+$stmt->bindParam('user', $_SESSION['idusers']);
+
+
 $stmt->execute();
 $isFetchModeSet = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $allRows = $stmt->fetchAll();

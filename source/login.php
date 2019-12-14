@@ -4,6 +4,9 @@ session_start();
 if (isset($_SESSION['username'])) {
 
     echo "you are logged in " . $_SESSION['username'];
+    echo "<form action='processlogout.php' method='post'>";
+    echo "<button>Sign out</button>";
+    echo "</form>";
 } else {
     echo "<div>";
     echo "you need to register";
